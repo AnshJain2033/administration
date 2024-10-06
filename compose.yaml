@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+
+    environment:
+      MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
+      MYSQL_USERNAME: root
+      MYSQL_DATABASE: leave
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - springboot-network
+
+  springboot-app-leave-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: leaveService
+    ports:
+      - "8084:8083"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://172.20.0.2:3306/leave
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=MYSQL_ROOT_PASSWORD
+      - SPRING_JPA_HIBERNATE_DDL-AUTO=update
+    depends_on:
+      - mysql
+    networks:
+      - springboot-network
+
+networks:
+  springboot-network:
+    driver: bridge
+volumes:
+  mysql-data:  # MySQL volume for persistence
+
