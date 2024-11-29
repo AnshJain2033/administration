@@ -9,12 +9,17 @@ import java.util.Date;
 @Entity
 public class Leave {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
     public String id;
     public Date startDate;
     public Date endDate;
     public String description;
     public String subject;
-    public String studentID;
+    @Column(name = "studentId")
+    public String studentId;
+    @Column(name = "status")
     public String status;
+    @Column(name = "assignedTo")
+    public String assignedTo;
+    @Column(name = "fileId")
+    public String fileId;
 }

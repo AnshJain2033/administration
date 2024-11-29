@@ -1,6 +1,9 @@
 package sgsits.cse.dis.leaveService.request;
 
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 import lombok.Data;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.util.Date;
@@ -12,6 +15,7 @@ public class LeaveRequestForm {
     String description;
     String studentId;
     //    List<File> uploadedFiles;
-    Date startDate;
-    Date endDate;
+    String startDate;
+    String endDate;
+//    MultipartFile file;
 }
