@@ -1,17 +1,16 @@
-package sgsits.cse.dis.leaveService.implementation;
+package sgsits.cse.dis.administration.implementation;
 
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
-import sgsits.cse.dis.leaveService.model.Leave;
+import sgsits.cse.dis.administration.model.Leave;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sgsits.cse.dis.leaveService.repo.LeaveRepository;
-import sgsits.cse.dis.leaveService.repo.StudentRepository;
-import sgsits.cse.dis.leaveService.request.LeaveRequestForm;
-import sgsits.cse.dis.leaveService.response.LeaveApplicationResponse;
-import sgsits.cse.dis.leaveService.service.LeaveApplicationService;
+import sgsits.cse.dis.administration.repo.LeaveRepository;
+import sgsits.cse.dis.administration.repo.StudentRepository;
+import sgsits.cse.dis.administration.request.LeaveRequestForm;
+import sgsits.cse.dis.administration.response.LeaveApplicationResponse;
+import sgsits.cse.dis.administration.service.LeaveApplicationService;
 
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;

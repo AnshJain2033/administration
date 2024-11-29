@@ -1,4 +1,4 @@
-package sgsits.cse.dis.leaveService.model;
+package sgsits.cse.dis.administration.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

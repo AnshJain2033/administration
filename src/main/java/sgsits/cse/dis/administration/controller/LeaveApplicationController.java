@@ -1,23 +1,17 @@
-package sgsits.cse.dis.leaveService.controller;
+package sgsits.cse.dis.administration.controller;
 
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.UrlResource;
-import org.springframework.http.MediaType;
 import org.springframework.web.multipart.MultipartFile;
-import sgsits.cse.dis.leaveService.constants.RestAPI;
+import sgsits.cse.dis.administration.constants.RestAPI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import sgsits.cse.dis.leaveService.model.Leave;
-import sgsits.cse.dis.leaveService.request.LeaveRequestForm;
-import sgsits.cse.dis.leaveService.response.LeaveApplicationResponse;
-import sgsits.cse.dis.leaveService.service.FileStorageService;
-import sgsits.cse.dis.leaveService.service.LeaveApplicationService;
+import sgsits.cse.dis.administration.model.Leave;
+import sgsits.cse.dis.administration.request.LeaveRequestForm;
+import sgsits.cse.dis.administration.response.LeaveApplicationResponse;
+import sgsits.cse.dis.administration.service.FileStorageService;
+import sgsits.cse.dis.administration.service.LeaveApplicationService;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 
 @CrossOrigin(origins = "*")

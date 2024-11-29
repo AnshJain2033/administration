@@ -1,7 +1,7 @@
-package sgsits.cse.dis.leaveService.response;
+package sgsits.cse.dis.administration.response;
 
 import lombok.Data;
-import sgsits.cse.dis.leaveService.model.Leave;
+import sgsits.cse.dis.administration.model.Leave;
 
 @Data
 public class LeaveApplicationResponse {

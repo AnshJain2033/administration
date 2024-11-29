@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>sgsits.cse.dis</groupId>
-	<artifactId>leaveService</artifactId>
+	<artifactId>administration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>leaveService</name>
 	<description>Leave Management Service</description>

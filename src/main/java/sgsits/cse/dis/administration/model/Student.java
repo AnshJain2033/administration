@@ -1,9 +1,8 @@
-package sgsits.cse.dis.leaveService.model;
+package sgsits.cse.dis.administration.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
 
 @Data
 @Table(name="student")

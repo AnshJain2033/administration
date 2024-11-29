@@ -1,4 +1,4 @@
-package sgsits.cse.dis.leaveService.constants;
+package sgsits.cse.dis.administration.constants;
 
 public class RestAPI {
     public static final String POST_LEAVE_APPLICATION = "/addLeave/{id}";

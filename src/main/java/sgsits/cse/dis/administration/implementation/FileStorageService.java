@@ -1,34 +1,27 @@
-package sgsits.cse.dis.leaveService.implementation;
+package sgsits.cse.dis.administration.implementation;
 
-import org.slf4j.ILoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.UrlResource;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-import sgsits.cse.dis.leaveService.model.FileStorage;
-import sgsits.cse.dis.leaveService.model.Leave;
-import sgsits.cse.dis.leaveService.model.Student;
-import sgsits.cse.dis.leaveService.repo.FileStorageRepository;
-import sgsits.cse.dis.leaveService.repo.LeaveRepository;
-import sgsits.cse.dis.leaveService.repo.StudentRepository;
+import sgsits.cse.dis.administration.model.FileStorage;
+import sgsits.cse.dis.administration.model.Leave;
+import sgsits.cse.dis.administration.model.Student;
+import sgsits.cse.dis.administration.repo.FileStorageRepository;
+import sgsits.cse.dis.administration.repo.LeaveRepository;
+import sgsits.cse.dis.administration.repo.StudentRepository;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Optional;
 import java.util.UUID;
 
 @Service
-public class FileStorageService implements sgsits.cse.dis.leaveService.service.FileStorageService{
+public class FileStorageService implements sgsits.cse.dis.administration.service.FileStorageService{
 //    private final Path root = Paths.get("uploads");
     @Autowired
     LeaveRepository leaveRepository;

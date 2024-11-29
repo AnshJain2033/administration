@@ -1,10 +1,9 @@
-package sgsits.cse.dis.leaveService.service;
+package sgsits.cse.dis.administration.service;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.multipart.MultipartFile;
-import sgsits.cse.dis.leaveService.model.Leave;
-import sgsits.cse.dis.leaveService.request.LeaveRequestForm;
-import sgsits.cse.dis.leaveService.response.LeaveApplicationResponse;
+import sgsits.cse.dis.administration.model.Leave;
+import sgsits.cse.dis.administration.request.LeaveRequestForm;
+import sgsits.cse.dis.administration.response.LeaveApplicationResponse;
 
 import java.util.Date;
 import java.util.List;

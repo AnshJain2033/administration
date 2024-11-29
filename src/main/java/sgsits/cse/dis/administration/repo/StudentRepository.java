@@ -1,6 +1,6 @@
-package sgsits.cse.dis.leaveService.repo;
+package sgsits.cse.dis.administration.repo;
 
-import sgsits.cse.dis.leaveService.model.Student;
+import sgsits.cse.dis.administration.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
